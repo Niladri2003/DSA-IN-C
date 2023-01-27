@@ -4,6 +4,10 @@ struct node
 {
     int data;
     struct node *next;
+    node(int x){
+        data=x;
+        next=NULL;
+    }
 };
 struct node *head = NULL;
 struct node *Create(struct node *head)

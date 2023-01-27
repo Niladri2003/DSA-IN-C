@@ -18,9 +18,10 @@ struct node *create(struct node *head)
     {
         new_node = (struct node *)malloc(sizeof(struct node));
         new_node->data = num;
+        new_node->next = NULL;
         if (head == NULL)
         {
-            new_node->next = NULL;
+
             head = new_node;
             temp = head;
         }
